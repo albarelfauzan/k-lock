@@ -16,8 +16,8 @@ const ProductCode = () => {
         </div>
 
         <p className={`${styles.paragraph2} text-center max-w-[470px] mt-5`}>
-          Feel free to introduce your product to our system by entering its
-          product code here! Let's connect it with <br></br> K-Lock.
+          Simply input your smart lock's product code here to gain access to
+          your homeowner key. It's your gateway to home security!
         </p>
         <input
           type="text"
