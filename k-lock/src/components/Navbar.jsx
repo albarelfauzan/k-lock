@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <img src={logo} alt="klock" className="w-[124px] h-[32px]" />
 
-      <ul className="list-none sm:flex hidden justify-center items-center flex-1">
+      <ul className="list-none sm:flex hidden justify-center items-center ml-24 flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -26,6 +26,9 @@ const Navbar = () => {
       </ul>
 
       <div className="sm:flex hidden items-center">
+        <button className="text-white font-['inter'] bg-[#414141] px-4 py-2 mr-4 rounded-[55px] hover:bg-blue-700 transition-colors duration-300">
+          Scan Lock
+        </button>
         <button className="text-white font-['inter'] bg-[#414141] px-4 py-2 rounded-[55px] hover:bg-blue-700 transition-colors duration-300">
           Connect Wallet
         </button>
@@ -56,6 +59,9 @@ const Navbar = () => {
                 <a href={`${nav.path}`}>{nav.title}</a>
               </li>
             ))}
+            <button className="text-white bg-[#414141] px-4 py-2 rounded-[55px] hover:bg-blue-700 transition-colors duration-300 mt-4 w-full">
+              Scan Lock
+            </button>
             <button className="text-white bg-[#414141] px-4 py-2 rounded-[55px] hover:bg-blue-700 transition-colors duration-300 mt-4 w-full">
               Connect Wallet
             </button>
